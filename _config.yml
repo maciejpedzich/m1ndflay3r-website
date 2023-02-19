@@ -31,12 +31,7 @@ permalink: "/:title"
 header_pages:
   - index.md
 
-style: dark
-listen_for_clients_preferred_style: true
-footer: "&copy; 2023-present m1ndflay3r"
-
 # Build settings
-remote_theme: maciejpedzich/jekyll-theme-console
 plugins:
   - jekyll-feed
 # Exclude from processing.

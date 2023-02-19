@@ -1,0 +1,37 @@
+{%- assign page_paths = site.header_pages | default: default_paths -%}
+<header>
+  <nav class="menu">
+    <ul>
+      {%- for path in page_paths -%}
+        {%- assign my_page = site.pages | where: "path", path | first -%}
+        {%- if my_page.title -%}
+        <li><a href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a></li>
+        {%- endif -%}
+      {%- endfor -%}
+      <li>
+        <a
+          href="https://github.com/maciejpedzich/m1ndflay3r-website/discussions/categories/ama"
+          target="_blank"
+          rel="noopener noreferrer"
+        >AMA</a>
+      </li>
+      <li>
+        <a href="/feed.xml" target="_blank">RSS</a>
+      </li>
+      <li>
+        <a
+          href="https://github.com/m1ndflay3r"
+          target="_blank"
+          rel="noopener noreferrer"
+        >GitHub</a>
+      </li>
+      <li>
+        <a
+          href="https://paypal.me/erisnihila"
+          target="_blank"
+          rel="noopener noreferrer"
+        >Donate</a>
+      </li>
+    </ul>
+  </nav>
+</header>
