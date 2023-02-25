@@ -34,6 +34,30 @@ header_pages:
 # Build settings
 plugins:
   - jekyll-feed
+
+prose:
+  rooturl: "_posts"
+  siteurl: "https://maciejpedzich.github.io/m1ndflay3r-website/"
+  relativeLinks: "https://maciejpedzich.github.io/m1ndflay3r-website/links.jsonp"
+  media: "assets/images"
+  ignore:
+    - index.md
+    - about.md
+    - 404.html
+    - _config.yml
+    - /_layouts
+    - /_includes
+  metadata:
+    _posts:
+      - name: "layout"
+        field:
+          element: "hidden"
+          value: "post"
+      - name: "title"
+        field:
+          element: "text"
+          label: "Title"
+          value: ""
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to
