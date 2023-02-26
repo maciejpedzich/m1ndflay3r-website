@@ -1,6 +1,5 @@
 ---
 layout: post
-published: false
 title: Prose.io test
 ---
 ## A New Post
